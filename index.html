@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./lib/jquery.js"></script>
     <title>Knockout Unit Testing</title>
 </head>
 <body>
     <h3>Knockout Unit Testing</h3>
 
     
-    
+    <script>
+        $(function(){
+            alert('Document Ready!');
+            $('h3').css({border: 'solid 1px red'})
+            $('body').append('<div>jQuery working!');
+        })
+    </script>
 </body>
 </html>
