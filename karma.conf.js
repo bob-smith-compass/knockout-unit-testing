@@ -10,8 +10,8 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    // frameworks: ['jasmine', 'requirejs'], // If you want a script tag to be added before requirejs (to load an amd compatible script before requirejs) then you must add the requirejs and adapter script to the files list and remove requirejs from the frameworks list. This allows you to control the order. For instance to load knockout.js before requirejs...
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'requirejs'], // If you want a script tag to be added before requirejs (to load an amd compatible script before requirejs) then you must add the requirejs and adapter script to the files list and remove requirejs from the frameworks list. This allows you to control the order. For instance to load knockout.js before requirejs...
+    // frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
     files: [

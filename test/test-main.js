@@ -13,11 +13,12 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base/src',
+  baseUrl: '',
 
   // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
   paths: {
     'jquery': '../lib/jquery',
+    'knockout': '../lib/knockout',
     'underscore': '../lib/underscore',
   },
 
@@ -25,6 +26,9 @@ require.config({
   shim: {
     'underscore': {
       exports: '_'
+    },
+    'knockout': {
+      exports: 'ko'
     }
   },
 
