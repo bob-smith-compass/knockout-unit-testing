@@ -10,17 +10,25 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'requirejs'],
-
+    // frameworks: ['jasmine', 'requirejs'], // If you want a script tag to be added before requirejs (to load an amd compatible script before requirejs) then you must add the requirejs and adapter script to the files list and remove requirejs from the frameworks list. This allows you to control the order. For instance to load knockout.js before requirejs...
+    frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
     files: [
+      'lib/knockout/knockout.js',
+
+      'lib/requirejs/require.js',
+      'node_modules/karma-requirejs/lib/adapter.js',
+
+
       'test/test-main.js',
+
       { pattern: 'lib/**/*.js', included: false },
       { pattern: 'src/**/*.js', included: false },
-      { pattern: 'test/**/*Spec.js', included: false }
-    ],
+      { pattern: 'test/**/*Spec.js', included: false },
 
+      'test/firstSpec.js'
+    ],
 
     // list of files / patterns to exclude
     exclude: [
@@ -72,3 +80,46 @@ module.exports = function(config) {
     concurrency: Infinity
   })
 }
+
+
+/** 
+ * Unmodified Official AngularJS karma.config.js file
+ */
+//jshint strict: false
+
+// module.exports = function(config) {
+//   config.set({
+
+//     basePath: './src',
+
+//     files: [
+//       'lib/angular/angular.js',
+//       'lib/angular-animate/angular-animate.js',
+//       'lib/angular-resource/angular-resource.js',
+//       'lib/angular-route/angular-route.js',
+//       '../node_modules/angular-mocks/angular-mocks.js',
+      
+//       '**/*.module.js',
+//       '*!(.module|.spec).js',
+//       '!(lib)/**/*!(.module|.spec).js',
+//       '**/*.spec.js',
+//       '**/*[Ss]pec.js'
+//     ],
+
+//     autoWatch: true,
+
+//     frameworks: ['jasmine'],
+
+//     browsers: ['Chrome', 'Firefox'],
+
+//     autoWatch: true,
+
+
+//     plugins: [
+//       'karma-chrome-launcher',
+//       'karma-firefox-launcher',
+//       'karma-jasmine'
+//     ]
+
+//   });
+// };
