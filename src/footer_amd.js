@@ -32,6 +32,9 @@ function DeveloperViewModel() {
 }  // DeveloperViewModel
     ko.applyBindings(new DeveloperViewModel());
 
+var describe = window.describe;
+var it = window.it;
+var expect = window.expect;
 
 // Jasmine Tests
 describe('Developer View Models', function(){
