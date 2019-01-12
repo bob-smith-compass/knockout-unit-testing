@@ -5,6 +5,11 @@
 # Webpack 
 `sudo npm i -D webpack-dev-server` - live reload
 
+## Watch webpack.config.js for changes
+`sudo yarn add  nodemon`
+Then add the following: 
+    `"wstart": "nodemon -w webpack.config.js -x webpack-dev-server -w --open"`
+    
 ## Graph modules visualization interactive
 
 `sudo npx webpack src/start_webpack.js --mode=development --json`

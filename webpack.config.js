@@ -20,7 +20,7 @@ module.exports = {
         new HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin()
     ],
-        
+
 
     mode: "development",
 
@@ -44,9 +44,11 @@ module.exports = {
             hot: true
         },
 
+
         // open: true, // Here
         // openPage: '/webpack.html' // And here
     },
+
 
 
 }

@@ -1,1 +1,1 @@
-export const template = 'Hello, Kncockout HMR!'
+export const template = 'Hello, Kncockout HMR!!'
