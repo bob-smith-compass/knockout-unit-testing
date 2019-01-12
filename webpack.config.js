@@ -1,10 +1,20 @@
 var path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-    entry: "./src/start_webpack.js",
+    // entry: "./src/start_webpack.js",
+    context: __dirname,
+    entry: "./src/index.js", // Knockout
+
     output: {
         path: path.resolve(__dirname, "./build/"),
         filename: "bundle.js"
     },
+    
+    plugins: [
+        new HtmlWebpackPlugin()
+      ],
+
     mode: "development",
 
     devtool: 'inline-source-map',

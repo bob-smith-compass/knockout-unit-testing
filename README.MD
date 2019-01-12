@@ -16,3 +16,7 @@
 # Knockout HMR attempt
 
 `sudo yarn add html-webpack-plugin`
+
+## Add knockout ( not knockoutjs )
+`sudo yarn add knockout`
+
