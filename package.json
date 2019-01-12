@@ -45,6 +45,7 @@
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
     "build": "sudo npx webpack src/start_webpack.js --mode=production -w",
-    "watch": "npx run build -- -w"
+    "watch": "npx run build -- -w",
+    "wstart": "webpack-dev-server --open"
   }
 }
