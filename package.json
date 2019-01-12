@@ -25,7 +25,9 @@
     "karma-jasmine": "^1.1.2",
     "karma-requirejs": "^1.1.0",
     "protractor": "^5.4.1",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   },
   "scripts": {
     "postinstall": "npm run copy-libs",

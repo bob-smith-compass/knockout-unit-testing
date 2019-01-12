@@ -18,19 +18,19 @@ describe('Developer View Models', function(){
     });
     it("should set model defaults when created", function(){
         expect(dev.firstName()).toBe('David');
-        expect(dev.lastName()).toBe('');
+        expect(dev.lastName()).toBe('Shams');
     });
     it("should set developer first name to string inputted", function(){
-        dev.firstName('uShip');
-        expect(dev.firstName()).toBe('uShip');
+        dev.firstName('David');
+        expect(dev.firstName()).toBe('David');
     });
     it("should set developer last name to string inputted", function(){
         dev.lastName('Developer');
         expect(dev.lastName()).toBe('Developer');
     });
     it("should set developer full name to be first name, a space, then last name", function(){        
-        dev.firstName('uShip');
-        dev.lastName('Developer');
-        expect(dev.fullName()).toBe('uShip Developer');
+        dev.firstName('John');
+        dev.lastName('Doe');
+        expect(dev.fullName()).toBe('John Doe');
     });
 });
