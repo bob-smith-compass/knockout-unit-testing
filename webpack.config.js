@@ -1,4 +1,8 @@
 var path = require('path');
+/**
+ * HMR for KnockoutJS setup
+ */
+const { HotModuleReplacementPlugin, NamedModulesPlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,10 +14,13 @@ module.exports = {
         path: path.resolve(__dirname, "./build/"),
         filename: "bundle.js"
     },
-    
+
     plugins: [
+        new NamedModulesPlugin(),
+        new HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin()
-      ],
+    ],
+        
 
     mode: "development",
 
@@ -28,17 +35,18 @@ module.exports = {
         inline: true,
         compress: true,
         proxy: {
-          '/api/**': {
-            target: 'http://10.189.1.159:8080',
-            secure: false,
-            changeOrigin: true,
-            cookieDomainRewrite: true
-          }
+            '/api/**': {
+                target: 'http://10.189.1.159:8080',
+                secure: false,
+                changeOrigin: true,
+                cookieDomainRewrite: true
+            },
+            hot: true
         },
 
-        open: true, // Here
-        openPage: '/webpack.html' // And here
-      },
-    
+        // open: true, // Here
+        // openPage: '/webpack.html' // And here
+    },
+
 
 }
