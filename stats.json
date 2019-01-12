@@ -1,0 +1,252 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.28.4",
+  "hash": "a6f9e075d4f37b229274",
+  "time": 91,
+  "builtAt": 1547288631028,
+  "publicPath": "",
+  "outputPath": "/Users/v738110/Compass/UnitTesting/knockout/dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 5007,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "main",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 230,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "308c1d1b25ce8ed50caf",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "./src/showmsg_amd.js",
+          "identifier": "/Users/v738110/Compass/UnitTesting/knockout/src/showmsg_amd.js",
+          "name": "./src/showmsg_amd.js",
+          "index": 1,
+          "index2": 0,
+          "size": 126,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+          "issuerId": "./src/start_webpack.js",
+          "issuerName": "./src/start_webpack.js",
+          "issuerPath": [
+            {
+              "id": "./src/start_webpack.js",
+              "identifier": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+              "name": "./src/start_webpack.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/start_webpack.js",
+              "moduleIdentifier": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+              "module": "./src/start_webpack.js",
+              "moduleName": "./src/start_webpack.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./showmsg_amd",
+              "loc": "1:0-23"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "define('jquery', function($){\n    console.log('Webpack working!');\n    // $('<div>Webpack working</div>').appendTo('body');\n})"
+        },
+        {
+          "id": "./src/start_webpack.js",
+          "identifier": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+          "name": "./src/start_webpack.js",
+          "index": 0,
+          "index2": 1,
+          "size": 104,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "main"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+              "loc": "main"
+            }
+          ],
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import \"./showmsg_amd\";\n\ndefine('jquery', function($){\n    // $('h3').css({border: 'solid 1px red'});\n})"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/showmsg_amd.js",
+      "identifier": "/Users/v738110/Compass/UnitTesting/knockout/src/showmsg_amd.js",
+      "name": "./src/showmsg_amd.js",
+      "index": 1,
+      "index2": 0,
+      "size": 126,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+      "issuerId": "./src/start_webpack.js",
+      "issuerName": "./src/start_webpack.js",
+      "issuerPath": [
+        {
+          "id": "./src/start_webpack.js",
+          "identifier": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+          "name": "./src/start_webpack.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "./src/start_webpack.js",
+          "moduleIdentifier": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+          "module": "./src/start_webpack.js",
+          "moduleName": "./src/start_webpack.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./showmsg_amd",
+          "loc": "1:0-23"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "define('jquery', function($){\n    console.log('Webpack working!');\n    // $('<div>Webpack working</div>').appendTo('body');\n})"
+    },
+    {
+      "id": "./src/start_webpack.js",
+      "identifier": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+      "name": "./src/start_webpack.js",
+      "index": 0,
+      "index2": 1,
+      "size": 104,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "main"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "/Users/v738110/Compass/UnitTesting/knockout/src/start_webpack.js",
+          "loc": "main"
+        }
+      ],
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import \"./showmsg_amd\";\n\ndefine('jquery', function($){\n    // $('h3').css({border: 'solid 1px red'});\n})"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

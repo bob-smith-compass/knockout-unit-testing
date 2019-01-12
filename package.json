@@ -27,7 +27,8 @@
     "protractor": "^5.4.1",
     "requirejs": "^2.3.6",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
     "postinstall": "npm run copy-libs",
@@ -42,6 +43,8 @@
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor e2e-tests/protractor.conf.js"
+    "protractor": "protractor e2e-tests/protractor.conf.js",
+    "build": "sudo npx webpack src/start_webpack.js --mode=production -w",
+    "watch": "npx run build -- -w"
   }
 }
