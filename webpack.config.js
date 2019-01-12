@@ -12,6 +12,7 @@ module.exports = {
 
     devServer: {
         contentBase: './',
+        watchContentBase: true,
         host: 'localhost',
         port: '9090',
         inline: true,
