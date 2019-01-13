@@ -24,12 +24,12 @@ module.exports = {
 
     mode: "development",
 
-    // devtool: 'inline-source-map',
+    devtool: 'inline-source-map',
 
 
     devServer: {
         contentBase: './',
-        watchContentBase: true,
+        watchContentBase: false,
         host: 'localhost',
         port: '9090',
         inline: true,
@@ -41,8 +41,8 @@ module.exports = {
                 changeOrigin: true,
                 cookieDomainRewrite: true
             },
-            // hot: true
-            hotOnly: true
+            hot: true
+            // hotOnly: true
         },
 
 
