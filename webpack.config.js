@@ -24,7 +24,7 @@ module.exports = {
 
     mode: "development",
 
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
 
 
     devServer: {
@@ -41,7 +41,8 @@ module.exports = {
                 changeOrigin: true,
                 cookieDomainRewrite: true
             },
-            hot: true
+            // hot: true
+            hotOnly: true
         },
 
 
